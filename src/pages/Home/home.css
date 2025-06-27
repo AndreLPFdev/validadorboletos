@@ -1,0 +1,68 @@
+.container1{
+    text-align: center;
+    background-image: url('/src/assets/fundobrasil.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.title1 {
+    color: rgb(43, 40, 40);
+    text-align: center;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 2.5rem;
+    
+    
+}
+  
+  .title2 {
+    color: rgb(43, 40, 40);
+    text-align: center;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+
+  .input{
+    color: rgb(43, 40, 40);
+    text-align: center;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 1.0rem;
+    
+  }
+
+  .selectedfile{
+    color: rgb(43, 40, 40);
+    text-align: center;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-left: 22px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 1.0rem;
+    
+  }

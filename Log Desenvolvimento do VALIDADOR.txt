@@ -1,0 +1,26 @@
+	Log Manual do Desenvolvimento do VALIDADOR DE BOLETOS NACIONAL
+
+
+Instalado: npx create-react-app validadorboletos
+
+
+Instalado: npm install react-router-dom
+	(O react-router-dom permite criar um sistema de navegação 
+no seu app React. Ele define rotas (<Route path="..." />) e 
+gerencia a exibição dos componentes corretamente com base na URL. 
+
+
+SEGUNDA ETAPA - Criar dois módulos usando NestJS e Mongo DB
+
+Instalado: npx @nestjs/cli new backend   (NestJS)
+
+Instalado:npm install @nestjs/mongoose mongoose (mongoose)
+
+Instalado: npx nest g module users
+npx nest g module documents
+npx nest g controller users --flat
+npx nest g service users --flat
+npx nest g controller documents --flat
+npx nest g service documents --flat    (para criar os módulos users e documents)
+  
+Parei no passo 5 do GPT
