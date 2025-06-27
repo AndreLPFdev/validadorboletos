@@ -1,4 +1,5 @@
-Descrição
+# Descrição:
+
 O Validador de Boletos é uma aplicação web que permite o upload e a validação automática de boletos bancários. O sistema analisa os documentos enviados, verifica a validade dos códigos de barras, armazena os arquivos no backend e mantém um histórico dos boletos validados.
 
 Funcionalidades
