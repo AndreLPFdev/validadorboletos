@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+Descrição
+O Validador de Boletos é uma aplicação web que permite o upload e a validação automática de boletos bancários. O sistema analisa os documentos enviados, verifica a validade dos códigos de barras, armazena os arquivos no backend e mantém um histórico dos boletos validados.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Funcionalidades
+Upload de arquivos PDF contendo boletos.
 
-## Available Scripts
+Validação automática dos códigos de barras dos boletos.
 
-In the project directory, you can run:
+Armazenamento dos arquivos no servidor.
 
-### `npm start`
+Histórico com lista dos boletos enviados e seus status de validação.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Backend construído com NestJS e MongoDB para gerenciamento dos dados.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Frontend em React para interface amigável e responsiva.
 
-### `npm test`
+Como usar
+Requisitos
+Node.js instalado (versão recomendada 16+)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+MongoDB rodando localmente ou remotamente
 
-### `npm run build`
+Passos para rodar localmente
+Clone o repositório:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy
+Edit
+git clone https://github.com/AndreLPFdev/validadorboletos.git
+cd validadorboletos
+Instale as dependências do backend e frontend:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Backend:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy
+Edit
+cd backend
+npm install
+Frontend:
 
-### `npm run eject`
+bash
+Copy
+Edit
+cd ../
+npm install
+Configure a conexão com o MongoDB no arquivo backend/db.js (ou onde estiver configurado).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Execute o backend:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy
+Edit
+cd backend
+npm run start
+Execute o frontend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copy
+Edit
+cd ../
+npm start
+Acesse a aplicação no navegador em: http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Fluxo do sistema
+O usuário acessa a interface web e faz o upload de arquivos PDF.
 
-## Learn More
+O backend recebe os arquivos, faz a validação do código do boleto e salva o arquivo e seus dados no banco.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+O usuário pode consultar o histórico de boletos enviados e os resultados da validação.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Estrutura do projeto
+/backend — código da API NestJS, incluindo modelos, controladores e serviços.
 
-### Code Splitting
+/src — código React do frontend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+/uploads — pasta onde os arquivos PDF enviados são armazenados.
 
-### Analyzing the Bundle Size
+Tecnologias usadas
+React (Frontend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+NestJS (Backend)
 
-### Making a Progressive Web App
+MongoDB (Banco de dados)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Mongoose (ODM)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Node.js
